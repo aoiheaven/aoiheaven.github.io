@@ -56,7 +56,7 @@ __(It  also  hasthe advantage of being moresuccinct.) I like it !__
 > - It could read user input
 > - Execute command(shell script)->app/system call/library routines
 
-我只认__(ba)sh__，__(t)csh__ 花里胡哨特性增增减减，source环境和bash等经常冲突，javaVM也踩csh坑，别那么乱七八糟求你了md，你在干活不是在自己玩。蛇皮（
+我只认 __(ba)sh__，__(t)csh__ 花里胡哨特性增增减减，source环境和bash等经常冲突，javaVM也踩csh坑，别那么乱七八糟求你了md，你在干活不是在自己玩。蛇皮（
 
 __各种shell历史轨迹（包袱）：__
 > - 一代目shell从贝尔实验室出来，控制流结构 __Algol 68__
