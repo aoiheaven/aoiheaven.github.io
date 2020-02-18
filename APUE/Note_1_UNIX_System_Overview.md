@@ -32,7 +32,7 @@ __(It  also  has the advantage of being more succinct.) I like it !__
 ## 1.3 Logging in
 总觉得登录没啥奇怪的知识：
 
-> We need what ?
+> What we need ?
 > - login name
 > - password
 
