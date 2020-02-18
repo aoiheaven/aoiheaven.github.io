@@ -73,5 +73,64 @@ __各种shell历史轨迹（包袱）：__
 
 这样总体看下来历史包袱会很重...
 
+## 1.4 Files and Directories
+~~感觉没什么奇怪的知识吧？~~
 
+### 1.4.1 File System
+- 层级结构，起点为root(/)
+- 目录项逻辑视图（树形图）与实际存放方式差距非常大，当多个文件具有多个硬链接时，很难保持多个属性副本之间的同步。
+-在深浅拷贝有看到过，会有一个特定寻址操作，具体看后面chapter4.
+- `stat` 和 `fstat` 函数会返回包含所有文件属性的信息
+- 文件信息：the __type__ of file (regular file, directory), the __size__ of the file, the __owner__ of the file, __permissions__ for the file (whether other users may access this file), and __when the file was last modified__.
 
+### 1.4.2 Filename
+无非是一些naming rule 没意思不管他
+
+奇怪的知识：
+- 早期UNIX System V/Research Unix（老版UNIX）的文件系统限制文件名最长14个字符
+- BSD扩充14个字符限制为255个
+- 目前商业UNIX文件系统支持255个字符以上
+- 哈？现在具体最多支持几个？爆掉为止咯
+
+### 1.4.3 Pathname
+绝对路径-clear
+
+相对路径-clear
+
+奇怪的知识：
+> ls用C代码实现，惊惹，其实仔细想想也是这些application的确都应该而且历史上也的确用c写啊，被秀到了（虽然代码trivial...
+---
+```c
+#include "apue.h"
+#include <dirent.h>
+int main(int argc, char *argv[])
+{
+    DIR *dp;
+    struct dirent   *dirp;
+    
+    if (argc != 2)
+        err_quit("usage: ls directory_name");
+        
+    if ((dp = opendir(argv[1])) == NULL)
+        err_sys("can’t open %s", argv[1]);
+    while ((dirp = readdir(dp)) != NULL)
+        printf("%s\n", dirp->d_name);
+    
+    closedir(dp);
+    exit(0);
+}
+
+```
+不是，这还用分析？
+如果上面的代码被存在myls.c可用gcc(GNU C)编译器编译，一般UNIX会把cc链接至gcc，所以gcc(1)=cc(1)，myls.c会被编译为a.out可执行文件，执行格式为：`./a.out /dev`
+
+输出我不po了反正就那回事
+- __ls(1) 表示法是UNIX原始习惯__
+- __现在和以前一样也用man查看联机手册__
+- > ___`apue.h`___ 头文件很关键(包含了标准系统头文件/常量/函数原型)
+    >> This header includes some standard system headers and defines  numerous  constants  and function  prototypes.
+- 系统头文件 ___`dirent.h`___ 用于给接下来的程序调用`opendir()`与`readdir()`函数原型与结构体`dirent`，但其它系统可能会把一份头文件内容分到多个文件中进行管理。
+- The  declaration  of  the `main` function  uses  the  style  supported  by  the  __ISO  C standard__. 
+- `opendir()` returns a pointer to a `DIR` structure. Call `readdir()` function returns a pointer to `dirent` structure or `NULL` if finished with the directory loop. Extract the name of each directory entry(`d_name`). Call `stat()` function to determine all the attributes of this file follow `file_name/d_name`.
+- Exception or Error: ___`Permission denied / Not a directory`___.
+- Exit signal: 0 means OK (normal exit) but 1~255 means that an error occurred. 0才是正常退出，1~255都有不同异常的对应，见section 8.5, obtain the `exit` status of a program that it executes is crucial.
