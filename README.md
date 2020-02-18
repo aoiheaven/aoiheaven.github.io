@@ -1,41 +1,56 @@
-## Welcome to My GitHub Note Pages
+# Welcome to My GitHub Note Pages
+> This page record learning roadmap about __ECE__ including but not limited to:
+>>  - __UNIX Environment__ Programming
+>> - VLSI __IC Design__ Front/Back End (__Advance__ Technology)
+>> - VPS and __over-GFW__ script backup
+>> - __Webcrawler__
+>> - __Complier__ Theory and Advance Programming
+>> - __Group__ Theory in mordern algebra
+>> - __Hardware__ Introduction
+>> - Hot-topic Programming Language: __Intermediate Python__
+>> - __Quantum Computing__
+>> - Probability and Random Processes -> __Measure__
+>> - ...
 
+---
 ![奇怪的知识增加了！](img/wdknoginc.jpg "奇怪的知识增加了可我只是一只MUR猫")
 
-奇怪的知识增加了.jpg
+---
 
-You can use the [editor on GitHub](https://github.com/mjwangg/aoiheaven.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+# Contents
+1. [__APUE ( Advanced Programming in the UNIX Environment )__](https://github.com/mjwangg/aoiheaven.github.io/blob/master/APUE/Note_1_UNIX_System_Overview.md)
+[CS] 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+2. [__Over-GFW VPS Backup__](https://github.com/mjwangg/aoiheavenV2rayBackup/blob/master/README.md)
+[GFW]
 
-### Markdown
+3. [__Webcrawler Oriented to Pixiv__](https://github.com/mjwangg/pixiv_webspider/blob/master/final_webspider.py)
+[Programming]
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+4. __Modern Compiler Implementation in C (虎书)__
+[Programming]
 
-```markdown
-Syntax highlighted code block
+5. __CMOS-VLSI-design__
+[IC-Design]
 
-# Header 1
-## Header 2
-### Header 3
+6. __VLSI Physical Design From Graph Partitioning to Timing Closure__
+[IC-Design]
 
-- Bulleted
-- List
+7. __Advance Process in VLSI__
+[IC-Design]
 
-1. Numbered
-2. List
+8. __Group Theory__
+[Math]
 
-**Bold** and _Italic_ and `Code` text
+9. __Probability and Random Processes__
+[Math]
 
-[Link](url) and ![Image](src)
-```
+10. __Measure Theory GTM18, Halmos__
+[Math]
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+10. __Introduction to Quantum Computing and Programming__
+[Physics]
 
-### Jekyll Themes
+11. TODO
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/mjwangg/aoiheaven.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+不加班的每天预计是看书打船打黄油
