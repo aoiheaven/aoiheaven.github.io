@@ -34,8 +34,9 @@ __(It  also  hasthe advantage of being moresuccinct.) I like it !__
 > We need what ?
 > - login name
 > - password
-### 1.3.1 Logging Name
+
 <span id = "jump2section1_3"> 
+### 1.3.1 Logging Name
 已存密码放在`/etc/passwd`中
 
 > It's composedof  seven  colon-separated  fields:  
@@ -142,4 +143,4 @@ int main(int argc, char *argv[])
 
 ### 1.4.5 Home Directory
 当我们以用户身份登录机器的时候，我们的工作目录，没错，登录也是application，也是processing，也有工作目录，此刻工作目录被设定为起始目录(home directory)，系统如何得知何处为起始目录或者如何改变起始目录？
-- Our home directory is obtained from our entry in the password file [(Section 1.3)](#jump2section1_3).
+- Our home directory is obtained from our entry in the password file. [(Section 1.3)](#jump2section1_3)
