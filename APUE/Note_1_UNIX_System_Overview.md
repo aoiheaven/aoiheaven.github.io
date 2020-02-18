@@ -36,7 +36,7 @@ __(It  also  hasthe advantage of being moresuccinct.) I like it !__
 > - password
 ### 1.3.1 Logging Name
 
-已存密码放在 /etc/passwdzhong
+已存密码放在`/etc/passwd`中
 
 > It's composedof  seven  colon-separated  fields:  
 > - __the  login  name__ (登录名)
