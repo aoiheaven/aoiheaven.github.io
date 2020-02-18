@@ -27,7 +27,7 @@ __(software: system utility+app+shell+library routines)__
 - Linux是GNU的kernel
 - Linux的严格称呼GNU/Linux
 - 不严格也是OK的
-__(It  also  hasthe advantage of being moresuccinct.) I like it !__
+__(It  also  has the advantage of being more succinct.) I like it !__
 
 ## 1.3 Logging in
 总觉得登录没啥奇怪的知识：
