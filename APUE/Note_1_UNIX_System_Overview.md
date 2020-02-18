@@ -61,9 +61,7 @@ __(It  also  hasthe advantage of being moresuccinct.) I like it !__
 __各种shell历史轨迹（包袱）：__
 > - The C shell, developed by Bill Joy at Berkeley, is provided with all the BSD releases.Additionally,the  C  shell  was  provided  by  AT&T  with  System  V/386  Release  3.2  andwas  also  included  in  System  V  Release  4(SVR4). 
 >> 所以这也是一方面我不用bsd的原因虽然现在也没有这方面的问题了
-
 >> CSH: Its control flow looks morelike the C language 但好的feature还是得品的，短程作业控制我用过
-
 > - The  Bourne-again  shell  is  the  GNU  shell  provided  with  all  Linux  systems.  It  wasdesigned  to  be  POSIX  conformant,  while  still  remaining  compatible  with  the  Bourneshell.  It supports features from both the C shell and the Korn shell.
 >> 总之一句话：__POSIX 1003.2__ 规范化是真的好，bash天下第一
 
