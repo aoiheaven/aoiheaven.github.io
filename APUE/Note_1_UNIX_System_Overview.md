@@ -8,9 +8,11 @@
 - __OS__ regarded as __Software__
 - __Kernel__ is small
 - __Ring-0__ concept belong to 分级保护域 (英语：hierarchical protection domains)
+
 ![protectiondomains](./Note_1_img/450px-Priv_rings.svg.jpg "Hierarchical Protection Domains")
 - __Kernel__ in __Ring-0__
 - __System Call__ between kernel and application/software
+
 ![ArchitectureUNIXOS](./Note_1_img/Architecture_of_the_UNIX_operating_system.jpg "Architecture of the UNIX operating system")
 - __System Call(系统调用)__ regarded as __Interface__ of Kernel
 - __Library Routines(公用函数库)__ base on System Call
