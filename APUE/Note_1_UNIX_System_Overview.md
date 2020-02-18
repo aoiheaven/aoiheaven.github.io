@@ -1,0 +1,2 @@
+### UNIX Architecture
+In a strict sense, an  operating  system  can  be  defined  as  the  softwarethat  controls  thehardwareresources of the computer and provides an environment under whichprograms can run. Generally, we call this softwarethekernel,since it is relatively smalland  resides  at  the  coreofthe  environment.
