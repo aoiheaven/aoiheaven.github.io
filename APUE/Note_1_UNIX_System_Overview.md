@@ -124,6 +124,8 @@ int main(int argc, char *argv[])
 }
 
 ```
+---
+
 不是，这还用分析？
 如果上面的代码被存在myls.c可用gcc(GNU C)编译器编译，一般UNIX会把cc链接至gcc，所以gcc(1)=cc(1)，myls.c会被编译为a.out可执行文件，执行格式为：`./a.out /dev`
 
@@ -145,3 +147,18 @@ int main(int argc, char *argv[])
 ### 1.4.5 Home Directory
 当我们以用户身份登录机器的时候，我们的工作目录，没错，登录也是application，也是processing，也有工作目录，此刻工作目录被设定为起始目录(home directory)，系统如何得知何处为起始目录或者如何改变起始目录？
 - Our home directory is obtained from our entry in the password file. [(Section 1.3)](#jump2section1_3)
+
+## 1.5 Input and Output
+很关键！
+
+### 1.5.1 File Description
+文件描述符(File Description)为非负整数
+
+- 内核用于标识特定进程访问文件的记号，为内核服务
+- 读写均会返回一个文件描述符
+
+### 1.5.2 Std-In, Std-Out, Std-Err
+All  shells  open  __three  descriptors__  whenever  a  new  program  is  run: __standard input__,  __standard output__,  and  __standard error__.
+
+TODO
+
