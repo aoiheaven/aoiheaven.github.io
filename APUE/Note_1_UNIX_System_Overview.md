@@ -113,6 +113,7 @@ int main(int argc, char *argv[])
         
     if ((dp = opendir(argv[1])) == NULL)
         err_sys("can’t open %s", argv[1]);
+    
     while ((dirp = readdir(dp)) != NULL)
         printf("%s\n", dirp->d_name);
     
@@ -133,4 +134,4 @@ int main(int argc, char *argv[])
 - The  declaration  of  the `main` function  uses  the  style  supported  by  the  __ISO  C standard__. 
 - `opendir()` returns a pointer to a `DIR` structure. Call `readdir()` function returns a pointer to `dirent` structure or `NULL` if finished with the directory loop. Extract the name of each directory entry(`d_name`). Call `stat()` function to determine all the attributes of this file follow `file_name/d_name`.
 - Exception or Error: ___`Permission denied / Not a directory`___.
-- Exit signal: 0 means OK (normal exit) but 1~255 means that an error occurred. 0才是正常退出，1~255都有不同异常的对应，见section 8.5, obtain the `exit` status of a program that it executes is crucial.
+- Exit signal: 0 means OK (normal exit) but 1\~255 means that an error occurred. 0才是正常退出，1\~255都有不同异常的对应，见section 8.5, obtain the `exit` status of a program that it executes is crucial.
