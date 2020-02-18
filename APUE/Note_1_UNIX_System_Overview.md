@@ -35,7 +35,7 @@ __(It  also  hasthe advantage of being moresuccinct.) I like it !__
 > - login name
 > - password
 ### 1.3.1 Logging Name
-
+<span id = "jump2section1_3"> 
 已存密码放在`/etc/passwd`中
 
 > It's composedof  seven  colon-separated  fields:  
@@ -136,3 +136,10 @@ int main(int argc, char *argv[])
 - Exception or Error: ___`Permission denied / Not a directory`___.
 - > Exit signal: 0 means OK (normal exit) but 1\~255 means that an error occurred. 0才是正常退出，1\~255都有不同异常的对应，见section 8.5, obtain the `exit` status of a program that it executes is crucial.
     >> 比如多线程/进程控制的时候就很尴尬因为你没有内部的wait/exit signal只有写异常终止指示文件，这就很蠢了，没错tsmc和AMD的憨憨就在这么搞。
+
+### 1.4.4 Working Directory
+每个进程都有工作目录（当前工作目录），所有进程认定的相对路径都从工作目录开始解释，Call `chdir()` to change workding directory.
+
+### 1.4.5 Home Directory
+当我们以用户身份登录机器的时候，我们的工作目录，没错，登录也是application，也是processing，也有工作目录，此刻工作目录被设定为起始目录(home directory)，系统如何得知何处为起始目录或者如何改变起始目录？
+- Our home directory is obtained from our entry in the password file [(Section 1.3)](#jump2section1_3).
