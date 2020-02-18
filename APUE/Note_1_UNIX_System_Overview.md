@@ -134,4 +134,5 @@ int main(int argc, char *argv[])
 - The  declaration  of  the `main` function  uses  the  style  supported  by  the  __ISO  C standard__. 
 - `opendir()` returns a pointer to a `DIR` structure. Call `readdir()` function returns a pointer to `dirent` structure or `NULL` if finished with the directory loop. Extract the name of each directory entry(`d_name`). Call `stat()` function to determine all the attributes of this file follow `file_name/d_name`.
 - Exception or Error: ___`Permission denied / Not a directory`___.
-- Exit signal: 0 means OK (normal exit) but 1\~255 means that an error occurred. 0才是正常退出，1\~255都有不同异常的对应，见section 8.5, obtain the `exit` status of a program that it executes is crucial.
+- > Exit signal: 0 means OK (normal exit) but 1\~255 means that an error occurred. 0才是正常退出，1\~255都有不同异常的对应，见section 8.5, obtain the `exit` status of a program that it executes is crucial.
+    >> 比如多线程/进程控制的时候就很尴尬因为你没有内部的wait/exit signal只有写异常终止指示文件，这就很蠢了，没错tsmc和AMD的憨憨就在这么搞。
