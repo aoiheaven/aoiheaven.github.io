@@ -1,6 +1,8 @@
 ## Welcome to My GitHub Note Pages
-奇怪的知识增加了.jpg
+
 ![奇怪的知识增加了！](img/wdknoginc.jpg "奇怪的知识增加了可我只是一只MUR猫")
+
+奇怪的知识增加了.jpg
 
 You can use the [editor on GitHub](https://github.com/mjwangg/aoiheaven.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
