@@ -46,7 +46,7 @@ __(It  also  hasthe advantage of being moresuccinct.) I like it !__
 > - __acomment field__ (注释字段 啥玩意啊？？？)
 > - __home directory (/home/sar)__  (开始目录)
 > - __shellprogram (/bin/ksh)__  (选定启用哪个shell)
-> - ___sar:x:205:105:Stephen Rago:/home/sar:/bin/ksh___
+> - ___sar\:x\:205:105:Stephen Rago:/home/sar:/bin/ksh___
 
 ### 1.3.2 Shell (其实我不喜欢他command-line-type)
 
@@ -59,12 +59,19 @@ __(It  also  hasthe advantage of being moresuccinct.) I like it !__
 我只认__(ba)sh__，__(t)csh__ 花里胡哨特性增增减减，source环境和bash等经常冲突，javaVM也踩csh坑，别那么乱七八糟求你了md，你在干活不是在自己玩。蛇皮（
 
 __各种shell历史轨迹（包袱）：__
+> - 一代目shell从贝尔实验室出来，控制流结构 __Algol 68__
+> - csh从伯克利出来，这崽种真的搞事情玩花样, 不过控制流结构为C-like
 > - The C shell, developed by Bill Joy at Berkeley, is provided with all the BSD releases.Additionally,the  C  shell  was  provided  by  AT&T  with  System  V/386  Release  3.2  andwas  also  included  in  System  V  Release  4(SVR4). 
 >> 所以这也是一方面我不用bsd的原因虽然现在也没有这方面的问题了
 >> CSH: Its control flow looks morelike the C language 但好的feature还是得品的，短程作业控制我用过
-> - The  Bourne-again  shell  is  the  GNU  shell  provided  with  all  Linux  systems.  It  wasdesigned  to  be  POSIX  conformant,  while  still  remaining  compatible  with  the  Bourneshell.  It supports features from both the C shell and the Korn shell.
+> - The  Bourne-again  shell  is  the  GNU  shell  provided  with  all  Linux  systems.  It  wasdesigned  to  be  __POSIX__  conformant,  while  still  remaining  compatible  with  the  Bourneshell.  It supports features from __both the C shell and the Korn shell__.
 >> 总之一句话：__POSIX 1003.2__ 规范化是真的好，bash天下第一
+> - bash(Bourne-again shell) 规范化+考虑更多兼容性，support new feature of C/Korn Shell
+> - tcsh(TENEX C Shell) csh的加强版
 
+- 而且神奇的是很多BSD对选择替代品而不是随主流，比如选用Debian Almquist shell. Solaries混合了BSD & System V提供基本所有的shell及变体，或许这个更好折腾？？？
+
+这样总体看下来历史包袱会很重...
 
 
 
