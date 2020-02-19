@@ -41,14 +41,14 @@ __(It  also  has the advantage of being more succinct.) I like it !__
 ### 1.3.1 Logging Name
 已存密码放在`/etc/passwd`中
 
-> It's composedof  seven  colon-separated  fields:  
+> It's composed of  seven  colon-separated  fields:  
 > - __the  login  name__ (登录名)
 > - __encrypted  password__ (加密过的密码)
 > - __numeric  user  ID(205)__ (用户ID)
 > - __numeric group ID(105)__ (用户组ID)
 > - __acomment field__ (注释字段 啥玩意啊？？？)
 > - __home directory (/home/sar)__  (开始目录)
-> - __shellprogram (/bin/ksh)__  (选定启用哪个shell)
+> - __shell program (/bin/ksh)__  (选定启用哪个shell)
 > - ___sar\:x\:205:105:Stephen Rago:/home/sar:/bin/ksh___
 
 ### 1.3.2 Shell (其实我不喜欢他command-line-type)
@@ -64,10 +64,10 @@ __(It  also  has the advantage of being more succinct.) I like it !__
 __各种shell历史轨迹（包袱）：__
 > - 一代目shell从贝尔实验室出来，控制流结构 __Algol 68__
 > - csh从伯克利出来，这崽种真的搞事情玩花样, 不过控制流结构为C-like
-> - The C shell, developed by Bill Joy at Berkeley, is provided with all the BSD releases.Additionally,the  C  shell  was  provided  by  AT&T  with  System  V/386  Release  3.2  andwas  also  included  in  System  V  Release  4(SVR4). 
+> - The C shell, developed by Bill Joy at Berkeley, is provided with all the BSD releases.Additionally,the  C  shell  was  provided  by  AT&T  with  System  V/386  Release  3.2  and was  also  included  in  System  V  Release  4(SVR4). 
 >> 所以这也是一方面我不用bsd的原因虽然现在也没有这方面的问题了
->> CSH: Its control flow looks morelike the C language 但好的feature还是得品的，短程作业控制我用过
-> - The  Bourne-again  shell  is  the  GNU  shell  provided  with  all  Linux  systems.  It  wasdesigned  to  be  __POSIX__  conformant,  while  still  remaining  compatible  with  the  Bourneshell.  It supports features from __both the C shell and the Korn shell__.
+>> CSH: Its control flow looks more like the C language 但好的feature还是得品的，短程作业控制我用过
+> - The  Bourne-again  shell  is  the  GNU  shell  provided  with  all  Linux  systems.  It  was designed  to  be  __POSIX__  conformant,  while  still  remaining  compatible  with  the  Bourne-shell.  It supports features from __both the C shell and the Korn shell__.
 >> 总之一句话：__POSIX 1003.2__ 规范化是真的好，bash天下第一
 > - bash(Bourne-again shell) 规范化+考虑更多兼容性，support new feature of C/Korn Shell
 > - tcsh(TENEX C Shell) csh的加强版
@@ -143,7 +143,7 @@ int main(int argc, char *argv[])
     >> 比如多线程/进程控制的时候就很尴尬因为你没有内部的wait/exit signal只有写异常终止指示文件，这就很蠢了，没错tsmc和AMD的憨憨就在这么搞。
 
 ### 1.4.4 Working Directory
-每个进程都有工作目录（当前工作目录），所有进程认定的相对路径都从工作目录开始解释，Call `chdir()` to change workding directory.
+每个进程都有工作目录（当前工作目录），所有进程认定的相对路径都从工作目录开始解释，Call `chdir()` to change working directory.
 
 ### 1.4.5 Home Directory
 当我们以用户身份登录机器的时候，我们的工作目录，没错，登录也是application，也是processing，也有工作目录，此刻工作目录被设定为起始目录(home directory)，系统如何得知何处为起始目录或者如何改变起始目录？
