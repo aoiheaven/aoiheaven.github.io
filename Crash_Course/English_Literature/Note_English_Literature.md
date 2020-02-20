@@ -26,6 +26,9 @@ We invented grammar to help us __describe__ everything including preposition, if
 > shall, I, com, pare,  thee, to, a,  sum, mer's,  day.  
 
     10个音节，5个音步
+BTW, __Thee__ is the second person singular object form of __you__. Equivalent to German dir/dich.
+![thee](Note_English_Literature_img/thee.png "Thou, Thee, Thy, Thine & Ye: Shakespearean English")
+
 
 而抑扬格就是先抑后扬先轻再重循环5次：
 > ↓ ↑ ↓ ↑ ↓ ↑ ↓ ↑ ↓ ↑  
