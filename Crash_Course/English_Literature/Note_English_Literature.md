@@ -36,7 +36,7 @@ We invented grammar to help us __describe__ everything including preposition, if
 ### 1.2 The Author is Dead
 > 作者到后面没有那么重要了，重要的是读者怎么看...
 
-    All the matter is this symbolic resonance(意象) is whether it's there! Because the book is benefit of myself! (也即：接受美学)
+All the matter is this symbolic resonance(意象) is whether it's there! Because the book is benefit of myself!(也即：接受美学)
 
 在读书过程中应该更加自信些，带有自己理解色彩的的阅读才是真正的阅读。
 
@@ -68,7 +68,8 @@ Dry and dead text cannot send correct message or feeling of myself to other peop
 > - Reading critically and attentively(批判细致阅读) give us linguist tools to share our own stories with more precision.👇
 > - 语言即为工具也是可以作为自己的武器！👇
 
-    然后让老板们相信你的各种报告和计划的周密性与可实行性，提升自己的社会价值，描述利润曲线图也会很有优势，因为蛊惑能力拉满了...玩文字的真的流弊
+然后让老板们相信你的各种报告和计划的周密性与可实行性，提升自己的社会价值，描述利润曲线图也会很有优势，因为蛊惑能力拉满了...玩文字的真的流弊。
+
 ---
 ### 1.5 Summary
 有空提升语言表达能力吧，slide多做些，讲的时候打个腹稿试试看吧...
