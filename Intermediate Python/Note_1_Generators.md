@@ -15,5 +15,9 @@ An iterator is any object in Python which has a next (Python2) or `__next__` met
 > When we use a loop to loop over something it is called iteration. It is the name given to the process itself.  
 从一个可迭代对象中取出迭代元素的一个动作或者过程，我是当他循环遍历或者状态机来看的，感觉没毛病。
 
+## 1.4 Generators(生成器)
+> 从实用功利主义看，生成器标志是yield(输出) something.
+
+
 
 
