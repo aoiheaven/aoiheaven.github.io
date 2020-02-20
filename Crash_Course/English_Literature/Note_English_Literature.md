@@ -45,9 +45,11 @@ We invented grammar to help us __describe__ everything including preposition, if
 > Maybe we using hyperbole and metaphor to describe aim to other people could get what we are feeling.
 
 - __Hyperbole(夸张手法)__
+
 ![hyperbole](Note_English_Literature_img/hyperbole.png "Hyperbole")
 
 - __Metaphor(比喻手法)__
+
 ![metaphor](Note_English_Literature_img/metaphor.png "Metaphor")
 
 Dry and dead text cannot send correct message or feeling of myself to other people although my best friends and even more complicated than broken up with my girlfriends.
